@@ -5,17 +5,55 @@ JPEG_IMAGES = []
 JPG_IMAGES = []
 PNG_IMAGES = []
 SVG_IMAGES = []
+
+AVI_VIDEO = []
+MP4_VIDEO = []
+MOV_VIDEO = []
+MKV_VIDEO = []
+
 MP3_AUDIO = []
+OGG_AUDIO = []
+WAV_AUDIO = []
+AMR_AUDIO = []
+
+DOC_DOCUMENTS = []
+DOCX_DOCUMENTS = []
+TXT_DOCUMENTS = []
+PDF_DOCUMENTS = []
+XLSX_DOCUMENTS = []
+PPTX_DOCUMENTS = []
+#archives
+#ZIP_DOCUMENTS = []
 OTHER = []
 ARCHIVES = []
 
 REGISTER_EXTENSIONS = {
+    #image files
     'JPEG': JPEG_IMAGES,
     'PNG': PNG_IMAGES,
     'JPG': JPG_IMAGES,
     'SVG': SVG_IMAGES,
+    #video files
+    'AVI': AVI_VIDEO,
+    'MP4': MP4_VIDEO,
+    'MOV': MOV_VIDEO,
+    'MKV': MKV_VIDEO,
+    #audio files
     'MP3': MP3_AUDIO,
-    'ZIP': ARCHIVES
+    'OGG': OGG_AUDIO,
+    'WAV': WAV_AUDIO,
+    'AMR': AMR_AUDIO,
+    #documents
+    'DOC': DOC_DOCUMENTS,
+    'DOCX': DOCX_DOCUMENTS,
+    'TXT': TXT_DOCUMENTS,
+    'PDF': PDF_DOCUMENTS,
+    'XLSX': XLSX_DOCUMENTS,
+    'PPTX': PPTX_DOCUMENTS,
+    #archives
+    'ZIP': ARCHIVES,
+    'GZ': ARCHIVES,
+    'TAR': ARCHIVES
 }
 
 FOLDERS = []
@@ -66,7 +104,12 @@ if __name__ == '__main__':
     print(f'Images jpg: {JPG_IMAGES}')
     print(f'Images svg: {SVG_IMAGES}')
     print(f'Audio mp3: {MP3_AUDIO}')
-    print(f'Archives: {ARCHIVES}')
+    print(f'Audio OGG: {OGG_AUDIO}')
+    print(f'Audio WAV: {WAV_AUDIO}')
+    print(f'Audio AMR: {AMR_AUDIO}')
+    print(f'ZIP_ARCHIVES: {ARCHIVES}')
+    print(f'GIZ_ARCHIVES: {ARCHIVES}')
+    print(f'TAR_ARCHIVES: {ARCHIVES}')
 
     print(f'Types of files in folder: {EXTENSIONS}')
     print(f'Unknown files of types: {UNKNOWN}')
